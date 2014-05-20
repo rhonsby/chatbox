@@ -5,6 +5,7 @@
   "private": true,
   "dependencies": {
     "socket.io": "~0.9.6",
-    "mime": "~1.2.7"
+    "mime": "~1.2.7",
+    "chance": "0.5.6"
   }
 }

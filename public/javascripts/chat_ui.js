@@ -6,7 +6,11 @@ $(function() {
   $('form').on('submit', function (event) {
     event.preventDefault();
     var message = $('input').val();
-    chatRoom.sendMessage(message);
+    if (message[0] === '/') {
+      chatRoom.processCommand(message);
+    } else {
+      chatRoom.sendMessage(message);
+    }
 
     $('input').val('');
   });
@@ -15,3 +19,4 @@ $(function() {
     $('#messages').append($('<li>').text(data.text));
   });
 });
+
