@@ -12,9 +12,11 @@ Chat.prototype.processCommand = function (message) {
 
   switch (command) {
   case '/nick':
+    console.log('nick');
+    console.log(command);
     this.socket.emit('nicknameChangeRequest', { text: cmdText });
     break;
-  case '/room':
+  case '/join':
     this.socket.emit('changeRoomRequest', { text: cmdText });
     break;
   default:

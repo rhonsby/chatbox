@@ -1,24 +1,38 @@
 <!doctype html>
 <html>
 <head>
+  <link rel="stylesheet" href="vendors/stylesheets/bootstrap.css">
+  <link rel="stylesheet" href="public/stylesheets/custom.css">
+
   <script src="/socket.io/socket.io.js"></script>
   <script src="vendors/javascripts/jquery.js"></script>
   <script src="vendors/javascripts/underscore.js"></script>
+  <script src="vendors/javascripts/bootstrap.js"></script>
 </head>
 <body>
-  <h1>Chatster app!</h1>
-  <div id="chat">
-    <ul id="messages">
-    </ul>
-  </div>
-  <div class="input">
-    <form>
-      <input>
-    </form>
-  </div>
-  <div id="room-list">
-    <ul id="users">
-    </ul>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2">
+        <h1>ChatBox</h1>
+        <div id="chat">
+          <ul id="messages">
+          </ul>
+        </div>
+
+        <div class="input">
+          <form action='#'>
+            <input>
+          </form>
+        </div>
+
+        <div id="room-list">
+          <ul id="users">
+          </ul>
+        </div>
+
+      </div>
+    </div>
   </div>
 
   <script src="public/javascripts/chat.js"></script>

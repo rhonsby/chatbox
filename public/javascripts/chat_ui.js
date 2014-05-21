@@ -5,6 +5,7 @@ $(function() {
 
   $('form').on('submit', function (event) {
     event.preventDefault();
+    
     var message = $('input').val();
     if (message[0] === '/') {
       chatRoom.processCommand(message);
@@ -26,4 +27,3 @@ $(function() {
     });
   });
 });
-
