@@ -14,6 +14,9 @@ Chat.prototype.processCommand = function (message) {
   case '/nick':
     this.socket.emit('nicknameChangeRequest', { text: cmdText });
     break;
+  case '/room':
+    this.socket.emit('changeRoomRequest', { text: cmdText });
+    break;
   default:
     console.log('No command: ' + command);
     break;

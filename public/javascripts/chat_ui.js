@@ -18,5 +18,12 @@ $(function() {
   socket.on('message', function (data) {
     $('#messages').append($('<li>').text(data.text));
   });
+
+  socket.on('roomList', function (data) {
+    $('#room-list').html('');
+    _.each(data.roomList, function (username) {
+      $('#room-list').append($('<li>').html(username));
+    });
+  });
 });
 
