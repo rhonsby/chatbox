@@ -12,9 +12,17 @@
 <body>
 
   <div class="container">
-    <div class="row">
-      <div class="col-md-8 col-md-offset-2">
-        <h1>ChatBox</h1>
+    <div class='header'>
+      <h1 class='center'>ChatBox</h1>
+      <h3>Commands:</h3>
+      <ul>
+        <li>To set your own nickname, type <code>/nick new_nickname</code>.</li>
+        <li>Want to join a different room? Type <code>/join room_name</code>.</li>
+      </ul>
+    </div>
+
+    <div class='row'>
+      <div class='col-md-9'>
         <div id="chat">
           <ul id="messages">
           </ul>
@@ -25,12 +33,13 @@
             <input>
           </form>
         </div>
+      </div>
 
+      <div class='col-md-3'>
         <div id="room-list">
           <ul id="users">
           </ul>
         </div>
-
       </div>
     </div>
   </div>

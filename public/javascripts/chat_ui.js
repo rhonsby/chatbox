@@ -5,7 +5,7 @@ $(function() {
 
   $('form').on('submit', function (event) {
     event.preventDefault();
-    
+
     var message = $('input').val();
     if (message[0] === '/') {
       chatRoom.processCommand(message);
@@ -18,6 +18,7 @@ $(function() {
 
   socket.on('message', function (data) {
     $('#messages').append($('<li>').text(data.text));
+    $('#chat').animate({ scrollTop: 1000 });
   });
 
   socket.on('roomList', function (data) {
