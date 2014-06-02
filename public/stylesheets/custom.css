@@ -17,8 +17,12 @@ h1 {
   padding-left: 0;
 }
 
+.header h3 {
+  margin-top: 10px;
+}
+
 .container {
-  width: 60%;
+  width: 80%;
 }
 
 #chat {
