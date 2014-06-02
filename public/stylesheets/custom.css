@@ -22,7 +22,7 @@ h1 {
 }
 
 .container {
-  width: 80%;
+  width: 70%;
 }
 
 #chat {
@@ -61,7 +61,7 @@ input {
 
 #room-list {
   color: #fff;
-  float: right;
+  float: left;
   display: inline;
   font-size: 16px;
   list-style: none;
